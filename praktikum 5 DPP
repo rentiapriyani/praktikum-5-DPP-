@@ -1,0 +1,26 @@
+my_list= ["mobil",
+"transportasidarat","150","silver","2"]
+my_list.append("4000000, truk")
+print(my_list)
+
+my_list.insert(2,"inova")
+print(my_list )
+
+
+pilih = input("menghitung luas bangun datar:")
+match pilih:
+    case"persegi" |"Persegi" |"PERSEGI":
+        sisi =int(input("masukan sisi:"))
+        hasilP  = sisi * sisi
+        print(hasilP)
+    case"lingkaran" |"Lingkaaran"|"LINGKARAN":
+        jari =int(input("masukan jari jari:"))
+        hasilL  = 1/4 * 22/7 * jari
+        print(hasilL)
+    case"segitiga" |"Segitiga" |"SEGITIGA":
+        alas =int(input("masukan alas:"))
+        tinggi = int(input("masukan tinggi:"))
+        hasilS  =alas * tinggi /2
+        print(hasilS)
+    case _:
+        print("salah memasukan pilihan")
